@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monash Uni AI Design Jam</title>
+    <meta
+      name="description"
+      content="Monash Uni AI Design Jam landing page."
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/markdown.css" />
+  </head>
+  <body class="page-color__lightblue single">
+    <div class="intro intro--primary intro--vbottom-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 intro-column">
+            <div class="intro__content">
+              <!-- <h3>21 July 2025</h3> -->
+              <h1>Monash Uni AI Design Jam</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main" id="top">
+      <section class="section section--about section--padding-top-md">
+        <div class="container">
+          <div class="section-header-text__inner">
+            <div class="section__head color__lightblue">
+              <h2><p>Theme: Iteration</p></h2>
+              <h3><p>14th of April - 5th of May 2026</p></h3>
+            </div>
+          </div>
+
+          <div class="section-body-text__inner section--padding-top-md">
+            <div class="section__body color__black markdown-content"
+              id="markdown-content"
+            >
+              <p class="markdown-loading">Loading brief content...</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="bottom-banner" aria-label="Project footer">
+      <div class="container">
+        <div class="bottom-banner__inner">
+          <p class="bottom-banner__title">Monash Uni AI Design Jam</p>
+          <p class="bottom-banner__meta">Monash Uni Ethics ID: 51072</p>
+          <p class="bottom-banner__meta bottom-banner__copy">&copy; 2026 Monash University</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Edit registration details directly here. This content is injected into the Registration tab. -->
+    <template id="registration-content-template" data-title="Registration">
+      <div class="registration-intro">
+        <p>Before registering, please read the attached explanatory statements. As this work is also part of a study run by Monash University, your participation is subject to you reading and understanding these statements.</p>
+      </div>
+
+      <div class="registration-statements" aria-label="Explanatory statements">
+        <a
+          class="registration-statement-link"
+          href="https://drive.google.com/file/d/1KV9q4-2zA1hE3sH6HKR3jAhK9Z5a98Vg/view?usp=drive_link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Explanatory Statement: Students
+        </a>
+        <a
+          class="registration-statement-link"
+          href="https://drive.google.com/file/d/1ieTOEWgKZl4jG0Wvn8c6vl8EcrSME7Qs/view?usp=drive_link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Explanatory Statement: Practitioners
+        </a>
+      </div>
+
+      <div class="registration-consent">
+        <label class="registration-consent__label">
+          <input
+            type="checkbox"
+            class="registration-consent__checkbox"
+            data-registration-consent
+          />
+          I confirm that I have read and understood the explanatory statements above.
+        </label>
+        <p class="registration-consent__note">
+          The registration button will unlock once this box is checked.
+        </p>
+        <!-- Replace data-registration-url with your live registration page URL. -->
+        <button
+          type="button"
+          class="registration-consent__button"
+          data-registration-button
+          data-registration-url="https://docs.google.com/forms/d/e/1FAIpQLSdWtJHi7yYqQ3AypoRFO6OmI_tLn8oVReOw3vJnHbqMtNWIKA/viewform?usp=publish-editor"
+          disabled
+        >
+          Continue to registration
+        </button>
+      </div>
+    </template>
+
+    <script src="js/marked.min.js"></script>
+    <script src="js/markdown-loader.js"></script>
+  </body>
+</html>
