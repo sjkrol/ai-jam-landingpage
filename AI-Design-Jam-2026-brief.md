@@ -112,7 +112,7 @@ A selection of submitted work will be exhibited during Melbourne Design Week at 
 | Milestone | Date |
 |---|---|
 | Registrations Open | Thursday 19 March 2026 |
-| Submission Deadline | Thursday 23 April 2026 |
+| Submission Deadline | Thursday 5 May 2026 |
 | Exhibition | 18 — 22 May 2026 |
 
 ## Why Participate?
