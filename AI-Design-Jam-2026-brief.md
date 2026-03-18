@@ -42,6 +42,7 @@ Submissions must meet the following requirements to be considered for evaluation
 - Submitted as a single A1 presentation panel and a process documentation deck of up to 10 slides
 - Original work produced for this competition — not previously published or submitted elsewhere
 - Submitted in digital format by the closing date
+- **Please note: Only participants within Australia can join this competition**
 
 
 ## Deliverables
