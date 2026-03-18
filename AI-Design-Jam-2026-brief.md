@@ -10,8 +10,6 @@ The pavilion is the design challenge. The process documentation is the research 
 
 Entries will be evaluated by an expert jury. Selected works will be exhibited publicly and contribute to an anonymised research analysis of emerging AI integration strategies in design.
 
-This is not a competition about having the most sophisticated AI workflow. It is about using new tools to produce good design.
-
 
 ## Theme: Iteration
 
@@ -28,7 +26,7 @@ Design a pavilion for Birrarung Marr — on the Yarra River, with Melbourne as i
 
 The pavilion should be capable of hosting 50 people comfortably for a seated event such as a talk or forum, and 150 people as a relaxed crowd for a social or cultural gathering.
 
-AI-enabled tools must be integrated into the design workflow. These may include text-to-image diffusion models, large language models, generative scripting tools, parametric systems, or custom and hybrid workflows.
+AI-enabled tools must be integrated into the design workflow. These may include text-to-image diffusion models, large language models, generative scripting tools, or custom and hybrid workflows.
 
 The emphasis is not on spectacle, but on the clarity and intentionality of the design process.
 
@@ -73,7 +71,7 @@ Participants determine what constitutes a main stage. There is no minimum number
 
 ## Prizes
 
-Winners will receive gift cards to an architecture bookshop. Prizes are drawn from a single pool across both student and practice categories. Awards are made per project — teams are responsible for dividing prizes among members.
+Winners will receive gift cards to an architecture bookshop. Prizes are drawn from a single pool across both student and practice categories. Awards are made per project — teams are responsible for dividing prizes among members. The winners will also have their work showcased at Melbourne Design Week at MADA (Monash Art Design and Architecture).
 
 | Place | Prize | Number of awards |
 |---|---|---|
