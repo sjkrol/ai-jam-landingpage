@@ -24,9 +24,9 @@ There is no prescribed level of AI sophistication. A single tool used with clari
 
 Design a pavilion for Birrarung Marr — on the Yarra River, with Melbourne as its backdrop — subject to site confirmation.
 
-The pavilion should be capable of hosting 50 people comfortably for a seated event such as a talk or forum, and 150 people as a relaxed crowd for a social or cultural gathering.
+The pavilion should be capable of hosting 50 people comfortably for a seated event such as a talk or forum, and 150 people as a relaxed crowd for a social or cultural gathering. The design should also consider spatial allocation for supporting services, including public toilets, a small office space, an event preparation area, and storage.
 
-AI-enabled tools must be integrated into the design workflow. These may include text-to-image diffusion models, large language models, generative scripting tools, or custom and hybrid workflows.
+AI-enabled tools must be integrated into the design workflow. These may include text-to-image diffusion models, large language models, generative scripting tools, parametric systems, or custom and hybrid workflows.
 
 The emphasis is not on spectacle, but on the clarity and intentionality of the design process.
 
