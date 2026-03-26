@@ -109,6 +109,48 @@ body:not(.home) .intro .row > div {
   text-align: right;
 }
 
+.site-logos {
+  background: #ffffff;
+  padding: 18px 0 14px;
+}
+
+.site-logos__wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0;
+  width: 100%;
+  max-width: calc((100% - 48px) * 1.5 / 3.5);
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.site-logos__logo {
+  flex: 0 1 auto;
+  min-width: 0;
+  width: auto;
+  max-width: 100%;
+  height: 72px;
+  display: block;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.site-logos__logo--mada {
+  height: 72px;
+}
+
+.site-logos__logo--monash {
+  height: 80px;
+}
+
+.site-logos__logo--sensilab {
+  height: 66px;
+}
+
+.site-logos__logo--mada + .site-logos__logo--sensilab {
+  margin-left: 20px;
+}
+
 .section--padding-top-md {
   padding: 100px 0 0;
 }
@@ -197,6 +239,30 @@ body:not(.home) .intro .row > div {
   .intro .intro__content {
     padding: 0 15px;
   }
+
+  .site-logos__wrap {
+    max-width: 100%;
+  }
+
+  .site-logos__logo {
+    height: 66px;
+  }
+
+  .site-logos__logo--mada {
+    height: 66px;
+  }
+
+  .site-logos__logo--monash {
+    height: 74px;
+  }
+
+  .site-logos__logo--sensilab {
+    height: 58px;
+  }
+
+  .site-logos__logo--mada + .site-logos__logo--sensilab {
+    margin-left: 16px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -223,6 +289,34 @@ body:not(.home) .intro .row > div {
 
   .bottom-banner__copy {
     text-align: left;
+  }
+
+  .site-logos {
+    padding: 12px 0;
+  }
+
+  .site-logos__wrap {
+    max-width: 100%;
+  }
+
+  .site-logos__logo {
+    height: 62px;
+  }
+
+  .site-logos__logo--mada {
+    height: 62px;
+  }
+
+  .site-logos__logo--monash {
+    height: 68px;
+  }
+
+  .site-logos__logo--sensilab {
+    height: 54px;
+  }
+
+  .site-logos__logo--mada + .site-logos__logo--sensilab {
+    margin-left: 12px;
   }
 
   .container {
