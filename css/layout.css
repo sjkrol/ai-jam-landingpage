@@ -296,27 +296,30 @@ body:not(.home) .intro .row > div {
   }
 
   .site-logos__wrap {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
     max-width: 100%;
   }
 
   .site-logos__logo {
-    height: 62px;
+    height: 44px;
   }
 
   .site-logos__logo--mada {
-    height: 62px;
+    height: 44px;
   }
 
   .site-logos__logo--monash {
-    height: 68px;
+    height: 48px;
   }
 
   .site-logos__logo--sensilab {
-    height: 54px;
+    height: 40px;
   }
 
   .site-logos__logo--mada + .site-logos__logo--sensilab {
-    margin-left: 12px;
+    margin-left: 8px;
   }
 
   .container {
