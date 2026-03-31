@@ -67,7 +67,7 @@ Inputs may include sketches, photographs, reference images, text prompts, geomet
 
 Where a stage involved human intervention between AI outputs — sketching, modelling, editing, scripting — this should be noted briefly.
 
-Participants determine what constitutes a main stage. There is no minimum number of stages required.
+Participants determine what constitutes a main stage. There is no minimum number of stages required. [An example submission can be found here](https://drive.google.com/file/d/18R50hPlAmlhNz3FMUiKNNd9FcWUimUy7/view?usp=drive_link).
 
 ## Prizes
 

@@ -124,6 +124,21 @@
     });
   }
 
+  function decorateExternalLinks(root) {
+    var links = root.querySelectorAll("a[href]");
+
+    links.forEach(function (link) {
+      var href = (link.getAttribute("href") || "").trim();
+
+      if (!href || href.charAt(0) === "#") {
+        return;
+      }
+
+      link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noopener noreferrer");
+    });
+  }
+
   function getRegistrationSectionFromHtml() {
     var source = document.getElementById("registration-content-template");
     var title = "Registration";
@@ -324,6 +339,7 @@
       panel.setAttribute("aria-labelledby", buttonId);
       panel.setAttribute("aria-hidden", index === 0 ? "false" : "true");
 
+      decorateExternalLinks(panel);
       wrapTables(panel);
       viewer.appendChild(panel);
     });
