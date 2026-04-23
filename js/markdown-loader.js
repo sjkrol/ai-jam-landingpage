@@ -175,45 +175,66 @@
     var consentCheckbox = registrationPanel.querySelector(
       "[data-registration-consent]"
     );
-    var registrationButton = registrationPanel.querySelector(
+    var registrationButtons = registrationPanel.querySelectorAll(
       "[data-registration-button]"
     );
 
-    if (!consentCheckbox || !registrationButton) {
+    if (!consentCheckbox || !registrationButtons.length) {
       return;
     }
 
-    var registrationUrl =
-      (registrationButton.getAttribute("data-registration-url") || "").trim();
-    var hasValidRegistrationUrl =
-      registrationUrl !== "" && registrationUrl !== "#";
+    var buttonConfigs = Array.prototype.map.call(
+      registrationButtons,
+      function (button) {
+        var registrationUrl =
+          (button.getAttribute("data-registration-url") || "").trim();
+        var hasValidRegistrationUrl =
+          registrationUrl !== "" && registrationUrl !== "#";
+
+        return {
+          button: button,
+          registrationUrl: registrationUrl,
+          hasValidRegistrationUrl: hasValidRegistrationUrl,
+        };
+      }
+    );
 
     function updateButtonState() {
-      registrationButton.disabled =
-        !consentCheckbox.checked || !hasValidRegistrationUrl;
-      registrationButton.setAttribute(
-        "aria-disabled",
-        registrationButton.disabled ? "true" : "false"
-      );
+      buttonConfigs.forEach(function (config) {
+        config.button.disabled =
+          !consentCheckbox.checked || !config.hasValidRegistrationUrl;
+        config.button.setAttribute(
+          "aria-disabled",
+          config.button.disabled ? "true" : "false"
+        );
+      });
     }
 
-    if (!hasValidRegistrationUrl) {
-      registrationButton.title =
-        "Set data-registration-url in index.html to enable this button.";
-    }
+    buttonConfigs.forEach(function (config) {
+      if (!config.hasValidRegistrationUrl) {
+        config.button.title =
+          "Set data-registration-url in index.html to enable this button.";
+      }
+    });
 
     consentCheckbox.addEventListener("change", updateButtonState);
 
-    registrationButton.addEventListener("click", function () {
-      if (registrationButton.disabled) {
-        return;
-      }
+    buttonConfigs.forEach(function (config) {
+      config.button.addEventListener("click", function () {
+        if (config.button.disabled) {
+          return;
+        }
 
-      var newWindow = window.open(registrationUrl, "_blank", "noopener,noreferrer");
+        var newWindow = window.open(
+          config.registrationUrl,
+          "_blank",
+          "noopener,noreferrer"
+        );
 
-      if (newWindow) {
-        newWindow.opener = null;
-      }
+        if (newWindow) {
+          newWindow.opener = null;
+        }
+      });
     });
 
     updateButtonState();
